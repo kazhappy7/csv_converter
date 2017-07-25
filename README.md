@@ -26,18 +26,18 @@ csvを読み込み、加工し、別ファイルで加工したcsvを保存
 *◆投稿者のコード*  
 > require 'csv'  
 > 
-> 読み込みファイル名
+> 読み込みファイル名  
 > data_list = CSV.read('sample.csv')
 > 
 > ここに処理を記載？
 > 
-> 生成ファイル名
+> 生成ファイル名  
 > file_path = 'index_db.csv'
 > 
-> CSV.open(file_path, 'wb') do |csv|
->   data_list.each do |rec|
->     csv << rec
->   end
+> CSV.open(file_path, 'wb') do |csv|  
+>   data_list.each do |rec|  
+>     csv << rec  
+>   end  
 > end
 
 ---------------------------------------
