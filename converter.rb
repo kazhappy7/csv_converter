@@ -8,3 +8,5 @@ csv_table.map.with_index(1) {|row, i| row['行番号'] = i}
 csv_table.delete('番地')
 
 File.open(file_path, 'wb'){|f| f.puts(csv_table.to_csv)}
+
+# これはテストだよ
